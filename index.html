@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROBLEMS</title>
+</head>
+<style>
+    pre {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+        margin-left: 35%;
+    }
+</style>
+
+<body>
+    <pre>
+       <h5>MULTIPLICATION TABLE 1-10</h5>
+        for (a = 1; a <= 10; a++) {
+            for (i = 0; i <= 10; i++) {
+                console.log(a + "x" + i + "=" + a * i);
+            }
+        }
+
+        function table() {
+            for (let i = 1; i <= 10; i++) {
+                for (let j = 1; j <= 10; j++) {
+                    console.log(i + "x" + j + "=" + i * j);
+                }
+        }
+        }
+
+       <h5>PRIME NUMBERS 1-100</h5>
+        for (a = 2; a <= 100; a++) {
+            prime = true;
+            for (i = 2; i < a; i++) {
+                if (a % i === 0) {
+                    prime = false;
+                    break;
+                }
+            }
+            if (prime) {
+                console.log(a);
+            }
+        }
+        
+        <h5>FIZZBUZZ PROGRAM</h5>
+
+        for (a = 1; a <= 100; a++) {
+            if (a % 3 === 0 && a % 5 === 0) {
+                console.log(a + " " + "is FizzBuzz");
+            } else if (a % 3 === 0) {
+                console.log(a + " " + "is Fizz");
+            } else if (a % 5 === 0) {
+                console.log(a + " " + "is Buzz");
+            }
+            else {
+                console.log(a);
+            }
+        }
+        
+        function fizzbuzz() {
+            for (a = 1; a <= 100; a++) {
+                if (a % 3 === 0 && a % 5 === 0) {
+                    console.log(a + " " + "is FizzBuzz");
+                } else if (a % 3 === 0) {
+                    console.log(a + " " + "is Fizz");
+                } else if (a % 5 === 0) {
+                    console.log(a + " " + "is Buzz");
+                }
+                else {
+                    console.log(a);
+                }
+            }
+        }
+        <h5>PATTERN PRINTING</h5>
+        let rows = 5;
+        for (i = 0; i < rows; i++) {
+            console.log("*");
+        }
+        
+        function pattern(rows) {
+          for (let i = 0; i < rows; i++) {
+         console.log('*');
+         }
+      }
+         pattern(3);
+    </pre>
+    <script>
+        // MULTIPLICATION TABLE 1-10
+
+        for (a = 1; a <= 10; a++) {
+            for (i = 0; i <= 10; i++) {
+                console.log(a + "x" + i + "=" + a * i);
+            }
+        }
+
+        function table() {
+            for (let i = 1; i <= 10; i++) {
+                for (let j = 1; j <= 10; j++) {
+                    console.log(i + "x" + j + "=" + i * j);
+                }
+            }
+        }
+        table();
+
+        // PRIME NUMBERS 1-100
+        for (a = 2; a <= 100; a++) {
+            prime = true;
+            for (i = 2; i < a; i++) {
+                if (a % i === 0) {
+                    prime = false;
+                    break;
+                }
+            }
+            if (prime) {
+                console.log(a);
+            }
+        }
+
+        // FIZZBUZZ PROGRAM
+        for (a = 1; a <= 100; a++) {
+            if (a % 3 === 0 && a % 5 === 0) {
+                console.log(a + " " + "is FizzBuzz");
+            } else if (a % 3 === 0) {
+                console.log(a + " " + "is Fizz");
+            } else if (a % 5 === 0) {
+                console.log(a + " " + "is Buzz");
+            } else {
+                console.log(a);
+            }
+        }
+
+        function fizzbuzz() {
+            for (a = 1; a <= 100; a++) {
+                if (a % 3 === 0 && a % 5 === 0) {
+                    console.log(a + " " + "is FizzBuzz");
+                } else if (a % 3 === 0) {
+                    console.log(a + " " + "is Fizz");
+                } else if (a % 5 === 0) {
+                    console.log(a + " " + "is Buzz");
+                }
+                else {
+                    console.log(a);
+                }
+            }
+        }
+        fizzbuzz();
+
+        // Pattern Printing:
+        let rows = 5;
+        for (i = 0; i < rows; i++) {
+            console.log("*");
+        }
+
+        function pattern(rows) {
+            for (let i = 0; i < rows; i++) {
+                console.log("*");
+            }
+        }
+        pattern(3);
+
+    </script>
+</body>
+
+</html>
